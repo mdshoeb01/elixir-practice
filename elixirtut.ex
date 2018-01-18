@@ -1,4 +1,7 @@
 defmodule Area do
+    def git(x) do
+      x
+    end
     def io do
       #name=IO.gets("what is your name? ")
       #IO.puts "hello #{name}"
