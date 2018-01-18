@@ -4,3 +4,4 @@
 erl_crash.dump
 *.ez
 *.beam
+#changes in master branch will raise a conflict
