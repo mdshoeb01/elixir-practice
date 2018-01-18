@@ -4,3 +4,8 @@
 erl_crash.dump
 *.ez
 *.beam
+defmodule Git_prject do
+  def add(x,y) do
+    x+y 
+  end
+end
