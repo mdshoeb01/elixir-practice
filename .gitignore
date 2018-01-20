@@ -4,4 +4,12 @@
 erl_crash.dump
 *.ez
 *.beam
-#changes in master branch will raise a conflict
+
+defmodule Git_prject do
+  def add(x,y) do
+    x+y 
+  end
+  def diff(x,y) do
+  x-y
+  end
+end
