@@ -42,11 +42,11 @@ public class Azri_Solutions {
 	  
 	          if(pegs[i]>curPos && (pegs[i]-curPos<=cap)){
 
-	                curPos=pegs[i];
+	                
 	   
-	             if(curPos+cap>=tot) return i+1;
+	             if(pegs[i]+cap>=tot) return i+1;
 	   
-	             curPos=moveIfPossible(curPos,pegs,i,tot,cap);
+	             curPos=moveIfPossible(pegs[i],pegs,i,tot,cap);
 	            
 	          }
 	            if(curPos+cap>=tot) return i+1;
