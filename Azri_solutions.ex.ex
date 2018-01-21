@@ -10,9 +10,7 @@ defmodule River do
 
     end
   end
-  defp loop(iter,size,tot,caps,pegs,curPos) when elem(pegs,iter)+cap>=tot do
-    iter+1
-  end
+  
 end
 tot=10
 cap=4
