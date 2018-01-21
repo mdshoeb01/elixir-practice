@@ -1,8 +1,8 @@
-package qa;
+
 import java.util.Scanner;
 
 //bootcamp question conducted by azri-solutions at their office near madhapur.
-public class Azi_Solutions {
+public class Azri_Solutions {
 	
 	
 	    
