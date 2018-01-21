@@ -16,7 +16,7 @@ cap=4
 pegs={2,4,1,9,7,5,8}
 
 min_instance=River.get_min(tot,cap,pegs)
-if min_instance<0 do
+if min_instance<=0 do
   IO.puts "Cannot cross the river"
 else IO.puts "You can cross the river in #{min_instance} seconds"
 end
