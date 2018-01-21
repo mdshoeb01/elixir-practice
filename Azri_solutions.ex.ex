@@ -11,9 +11,9 @@ defmodule River do
     end
   end
 end
-tot=IO.gets "Enter the value for tot: "
-cap=IO.gets "Enter the value for cap: "
-pegs={2,4,19,7,5,8}
+tot=10
+cap=4
+pegs={2,4,1,9,7,5,8}
 
 min_instance=River.get_min(tot,cap,pegs)
 if min_instance<0 do
