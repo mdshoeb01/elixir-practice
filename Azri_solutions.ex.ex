@@ -2,13 +2,16 @@ defmodule River do
   def get_min(tot,caps,pegs) do
     curPos=0
     i=0
-    loop(i,tuple_size(pegs),tot,caps,pegs,curPos)
-
+    value=loop(i,tuple_size(pegs),tot,caps,pegs,curPos)
+    value
   end
   defp loop(iter,size,tot,caps,pegs,curPos) do
     if(elem(pegs,iter)>curPos and (elem(pegs,iter)-curPos<=cap)) do
-      
+
     end
+  end
+  defp loop(iter,size,tot,caps,pegs,curPos) when elem(pegs,iter)+cap>=tot do
+    iter+1
   end
 end
 tot=10
