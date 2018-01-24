@@ -5,8 +5,8 @@ defmodule River do
     value=loop(i,tuple_size(pegs),tot,caps,pegs,curPos)
     value
   end
-  defp loop(iter,size,tot,caps,pegs,curPos) when (elem(pegs,iter)>curPos and (elem(pegs,iter)-curPos<=cap)) and (elem(pegs,iter)>=tot) do
-		i+1
+  defp loop(iter,size,tot,caps,pegs,curPos) when (elem(pegs,iter)>curPos and (elem(pegs,iter)-curPos<=cap)) and (elem(pegs,iter)+cap>=tot) do
+		iter+1
     end
   defp loop(iter,size,tot,caps,pegs,curPos) when (elem(pegs,iter)>curPos and (elem(pegs,iter)-curPos<=cap))
   	curPos1=moveIfPossible(elem(pegs,iter),pegs,iter,tot,cap)
@@ -22,6 +22,7 @@ defmodule River do
   defp moveIfPossible(pos,list,maxIndex,tot,cap) do
 
     n=maxIndex
+    #remove do-while loop
     res=Dowhile(maxIndex,pos,cap,list,false,tot,n)
     #loop2(0,maxIndex,pos,cap,list,is_changed,tot)
     res
